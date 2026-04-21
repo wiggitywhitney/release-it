@@ -1,6 +1,20 @@
 groups:
+  - id: registry.release_it.agent_extensions
+    type: attribute_group
+    display_name: Agent-Created Attributes
+    brief: Attributes created by the instrumentation agent
+    attributes:
+      - id: release_it.util.collection_size
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.util.collection_size"
   - id: span.release_it.shell.exec
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.shell.exec"
+    span_kind: internal
+  - id: span.release_it.util.reduce_until
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.util.reduce_until"
     span_kind: internal
