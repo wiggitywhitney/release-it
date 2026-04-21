@@ -1,19 +1,6 @@
 groups:
-  - id: registry.release_it.agent_extensions
-    type: attribute_group
-    display_name: Agent-Created Attributes
-    brief: Attributes created by the instrumentation agent
-    attributes:
-      - id: release_it.plugins.enabled_count
-        type: int
-        stability: development
-        brief: "Agent-discovered attribute: release_it.plugins.enabled_count"
-      - id: release_it.plugins.external_count
-        type: int
-        stability: development
-        brief: "Agent-discovered attribute: release_it.plugins.external_count"
-  - id: span.release_it.plugin.get_plugins
+  - id: span.release_it.version.get_incremented_version
     type: span
     stability: development
-    brief: "Agent-discovered span: release_it.plugin.get_plugins"
+    brief: "Agent-discovered span: release_it.version.get_incremented_version"
     span_kind: internal
