@@ -1,0 +1,6 @@
+groups:
+  - id: span.release_it.config.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.init"
+    span_kind: internal
