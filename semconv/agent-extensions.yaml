@@ -1,6 +1,6 @@
 groups:
-  - id: span.release_it.version.get_incremented_version
+  - id: span.release_it.shell.exec
     type: span
     stability: development
-    brief: "Agent-discovered span: release_it.version.get_incremented_version"
+    brief: "Agent-discovered span: release_it.shell.exec"
     span_kind: internal
