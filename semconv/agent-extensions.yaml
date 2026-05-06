@@ -117,3 +117,13 @@ groups:
     stability: development
     brief: "Agent-discovered span: release_it.version.get_incremented_version"
     span_kind: internal
+  - id: span.release_it.shell.exec_formatted_command
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.shell.exec_formatted_command"
+    span_kind: internal
+  - id: span.release_it.shell.exec_with_arguments
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.shell.exec_with_arguments"
+    span_kind: internal
