@@ -112,3 +112,8 @@ groups:
     stability: development
     brief: "Agent-discovered span: release_it.git.rollback_tag_push"
     span_kind: internal
+  - id: span.release_it.version.get_incremented_version
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.version.get_incremented_version"
+    span_kind: internal
