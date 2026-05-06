@@ -16,6 +16,22 @@ groups:
         type: int
         stability: development
         brief: "Agent-discovered attribute: release_it.plugin.external_count"
+      - id: release_it.git.is_repo
+        type: boolean
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git.is_repo"
+      - id: release_it.git.enabled
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git.enabled"
+      - id: release_it.git.has_upstream
+        type: boolean
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git.has_upstream"
+      - id: release_it.git.push_repo
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git.push_repo"
   - id: span.release_it.config.init
     type: span
     stability: development
@@ -45,4 +61,54 @@ groups:
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.plugin.get_plugins"
+    span_kind: internal
+  - id: span.release_it.git.is_git_repo
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.is_git_repo"
+    span_kind: internal
+  - id: span.release_it.git.is_enabled
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.is_enabled"
+    span_kind: internal
+  - id: span.release_it.git.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.init"
+    span_kind: internal
+  - id: span.release_it.git.before_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.before_release"
+    span_kind: internal
+  - id: span.release_it.git.release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.release"
+    span_kind: internal
+  - id: span.release_it.git.is_required_branch
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.is_required_branch"
+    span_kind: internal
+  - id: span.release_it.git.has_upstream_branch
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.has_upstream_branch"
+    span_kind: internal
+  - id: span.release_it.git.get_upstream_args
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.get_upstream_args"
+    span_kind: internal
+  - id: span.release_it.git.push
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.push"
+    span_kind: internal
+  - id: span.release_it.git.rollback_tag_push
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git.rollback_tag_push"
     span_kind: internal
