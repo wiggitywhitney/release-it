@@ -23,3 +23,8 @@ groups:
     stability: development
     brief: "Agent-discovered span: release_it.config.load_local_config"
     span_kind: internal
+  - id: span.release_it.plugin.show_prompt
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.plugin.show_prompt"
+    span_kind: internal
