@@ -1,0 +1,25 @@
+groups:
+  - id: registry.release_it.agent_extensions
+    type: attribute_group
+    display_name: Agent-Created Attributes
+    brief: Attributes created by the instrumentation agent
+    attributes:
+      - id: release_it.config.file
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.config.file"
+  - id: span.release_it.config.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.init"
+    span_kind: internal
+  - id: span.release_it.config.load_options
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.load_options"
+    span_kind: internal
+  - id: span.release_it.config.load_local_config
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.load_local_config"
+    span_kind: internal
