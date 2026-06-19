@@ -1,3 +1,4 @@
 schemaPath: semconv
 sdkInitFile: examples/instrumentation.js
 dependencyStrategy: peerDependencies
+targetType: short-lived
