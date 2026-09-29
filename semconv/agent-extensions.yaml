@@ -28,6 +28,10 @@ groups:
         type: string
         stability: development
         brief: "Agent-discovered attribute: release_it.util.collection_size"
+      - id: release_it.git_release.script_type
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git_release.script_type"
   - id: span.release_it.config.init
     type: span
     stability: development
@@ -57,4 +61,14 @@ groups:
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.plugin.show_prompt"
+    span_kind: internal
+  - id: span.release_it.git_release.before_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git_release.before_release"
+    span_kind: internal
+  - id: span.release_it.git_release.process_release_notes
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git_release.process_release_notes"
     span_kind: internal
