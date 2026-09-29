@@ -72,3 +72,68 @@ groups:
     stability: development
     brief: "Agent-discovered span: release_it.git_release.process_release_notes"
     span_kind: internal
+  - id: span.release_it.github.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.init"
+    span_kind: internal
+  - id: span.release_it.github.is_authenticated
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.is_authenticated"
+    span_kind: internal
+  - id: span.release_it.github.is_collaborator
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.is_collaborator"
+    span_kind: internal
+  - id: span.release_it.github.release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.release"
+    span_kind: internal
+  - id: span.release_it.github.get_latest_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_latest_release"
+    span_kind: internal
+  - id: span.release_it.github.get_octokit_release_options
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_octokit_release_options"
+    span_kind: internal
+  - id: span.release_it.github.create_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.create_release"
+    span_kind: internal
+  - id: span.release_it.github.generate_web_url
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.generate_web_url"
+    span_kind: internal
+  - id: span.release_it.github.create_web_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.create_web_release"
+    span_kind: internal
+  - id: span.release_it.github.update_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.update_release"
+    span_kind: internal
+  - id: span.release_it.github.comment_on_resolved_items
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.comment_on_resolved_items"
+    span_kind: internal
+  - id: span.release_it.github.get_commits
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_commits"
+    span_kind: internal
+  - id: span.release_it.github.render_release_notes
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.render_release_notes"
+    span_kind: internal
