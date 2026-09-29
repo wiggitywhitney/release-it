@@ -32,6 +32,22 @@ groups:
         type: string
         stability: development
         brief: "Agent-discovered attribute: release_it.git_release.script_type"
+      - id: release_it.gitlab.milestones_count
+        type: int
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.milestones_count"
+      - id: release_it.gitlab.request.endpoint
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.request.endpoint"
+      - id: release_it.gitlab.release.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.release.name"
+      - id: release_it.gitlab.asset.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.asset.name"
   - id: span.release_it.config.init
     type: span
     stability: development
@@ -136,4 +152,49 @@ groups:
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.github.render_release_notes"
+    span_kind: internal
+  - id: span.release_it.gitlab.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.init"
+    span_kind: internal
+  - id: span.release_it.gitlab.is_authenticated
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.is_authenticated"
+    span_kind: internal
+  - id: span.release_it.gitlab.is_collaborator
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.is_collaborator"
+    span_kind: internal
+  - id: span.release_it.gitlab.before_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.before_release"
+    span_kind: internal
+  - id: span.release_it.gitlab.check_release_milestones
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.check_release_milestones"
+    span_kind: internal
+  - id: span.release_it.gitlab.release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.release"
+    span_kind: internal
+  - id: span.release_it.gitlab.request
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.request"
+    span_kind: internal
+  - id: span.release_it.gitlab.create_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.create_release"
+    span_kind: internal
+  - id: span.release_it.gitlab.upload_asset
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.upload_asset"
     span_kind: internal
