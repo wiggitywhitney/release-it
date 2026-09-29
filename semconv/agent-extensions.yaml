@@ -1,0 +1,223 @@
+groups:
+  - id: registry.release_it.agent_extensions
+    type: attribute_group
+    display_name: Agent-Created Attributes
+    brief: Attributes created by the instrumentation agent
+    attributes:
+      - id: release_it.config.file
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.config.file"
+      - id: release_it.prompt.namespace
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.namespace"
+      - id: release_it.prompt.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.name"
+      - id: release_it.prompt.enabled
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.enabled"
+      - id: release_it.prompt.type
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.type"
+      - id: release_it.util.collection_size
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.util.collection_size"
+      - id: release_it.git_release.script_type
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.git_release.script_type"
+      - id: release_it.gitlab.milestones_count
+        type: int
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.milestones_count"
+      - id: release_it.gitlab.request.endpoint
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.request.endpoint"
+      - id: release_it.gitlab.release.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.release.name"
+      - id: release_it.gitlab.asset.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.gitlab.asset.name"
+      - id: release_it.plugin.enabled_count
+        type: int
+        stability: development
+        brief: "Agent-discovered attribute: release_it.plugin.enabled_count"
+      - id: release_it.plugin.external_count
+        type: int
+        stability: development
+        brief: "Agent-discovered attribute: release_it.plugin.external_count"
+  - id: span.release_it.config.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.init"
+    span_kind: internal
+  - id: span.release_it.config.load_options
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.load_options"
+    span_kind: internal
+  - id: span.release_it.config.load_local_config
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.config.load_local_config"
+    span_kind: internal
+  - id: span.release_it.prompt.show
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.prompt.show"
+    span_kind: internal
+  - id: span.release_it.util.reduce_until
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.util.reduce_until"
+    span_kind: internal
+  - id: span.release_it.plugin.show_prompt
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.plugin.show_prompt"
+    span_kind: internal
+  - id: span.release_it.git_release.before_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git_release.before_release"
+    span_kind: internal
+  - id: span.release_it.git_release.process_release_notes
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.git_release.process_release_notes"
+    span_kind: internal
+  - id: span.release_it.github.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.init"
+    span_kind: internal
+  - id: span.release_it.github.is_authenticated
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.is_authenticated"
+    span_kind: internal
+  - id: span.release_it.github.is_collaborator
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.is_collaborator"
+    span_kind: internal
+  - id: span.release_it.github.release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.release"
+    span_kind: internal
+  - id: span.release_it.github.get_latest_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_latest_release"
+    span_kind: internal
+  - id: span.release_it.github.get_octokit_release_options
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_octokit_release_options"
+    span_kind: internal
+  - id: span.release_it.github.create_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.create_release"
+    span_kind: internal
+  - id: span.release_it.github.generate_web_url
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.generate_web_url"
+    span_kind: internal
+  - id: span.release_it.github.create_web_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.create_web_release"
+    span_kind: internal
+  - id: span.release_it.github.update_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.update_release"
+    span_kind: internal
+  - id: span.release_it.github.comment_on_resolved_items
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.comment_on_resolved_items"
+    span_kind: internal
+  - id: span.release_it.github.get_commits
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.get_commits"
+    span_kind: internal
+  - id: span.release_it.github.render_release_notes
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.github.render_release_notes"
+    span_kind: internal
+  - id: span.release_it.gitlab.init
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.init"
+    span_kind: internal
+  - id: span.release_it.gitlab.is_authenticated
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.is_authenticated"
+    span_kind: internal
+  - id: span.release_it.gitlab.is_collaborator
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.is_collaborator"
+    span_kind: internal
+  - id: span.release_it.gitlab.before_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.before_release"
+    span_kind: internal
+  - id: span.release_it.gitlab.check_release_milestones
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.check_release_milestones"
+    span_kind: internal
+  - id: span.release_it.gitlab.release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.release"
+    span_kind: internal
+  - id: span.release_it.gitlab.request
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.request"
+    span_kind: internal
+  - id: span.release_it.gitlab.create_release
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.create_release"
+    span_kind: internal
+  - id: span.release_it.gitlab.upload_asset
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.gitlab.upload_asset"
+    span_kind: internal
+  - id: span.release_it.version.get_incremented_version
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.version.get_incremented_version"
+    span_kind: internal
+  - id: span.release_it.plugin.load
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.plugin.load"
+    span_kind: internal
+  - id: span.release_it.plugin.get_plugins
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.plugin.get_plugins"
+    span_kind: internal
