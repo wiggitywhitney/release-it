@@ -24,6 +24,10 @@ groups:
         type: string
         stability: development
         brief: "Agent-discovered attribute: release_it.prompt.type"
+      - id: release_it.util.collection_size
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.util.collection_size"
   - id: span.release_it.config.init
     type: span
     stability: development
@@ -43,4 +47,9 @@ groups:
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.prompt.show"
+    span_kind: internal
+  - id: span.release_it.util.reduce_until
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.util.reduce_until"
     span_kind: internal
