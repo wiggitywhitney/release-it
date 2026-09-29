@@ -8,6 +8,22 @@ groups:
         type: string
         stability: development
         brief: "Agent-discovered attribute: release_it.config.file"
+      - id: release_it.prompt.namespace
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.namespace"
+      - id: release_it.prompt.name
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.name"
+      - id: release_it.prompt.enabled
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.enabled"
+      - id: release_it.prompt.type
+        type: string
+        stability: development
+        brief: "Agent-discovered attribute: release_it.prompt.type"
   - id: span.release_it.config.init
     type: span
     stability: development
@@ -22,4 +38,9 @@ groups:
     type: span
     stability: development
     brief: "Agent-discovered span: release_it.config.load_local_config"
+    span_kind: internal
+  - id: span.release_it.prompt.show
+    type: span
+    stability: development
+    brief: "Agent-discovered span: release_it.prompt.show"
     span_kind: internal
